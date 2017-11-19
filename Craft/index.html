@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- the meta tag specifies what character set your website is written in. UTF is a character encoding capable of encoding in unicode. This is a rabbithole of explantions. Will revisit later. -->
+<meta charset='UTF-8'/>
+<!-- this is the link to your style sheet. Your Google fonts will also live here, but that is an issue for later. Don't forget to close your file paths. -->
+	<link rel="stylesheet"  href="style.css" type="text/css">
+<!-- insert your Googlefont here: -->
+	<link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+	<title>The Craft</title>
+<!-- Modal!!! This one plays video(hopefully, lol, so delirious). Modal lives in the header. -->
+<!-- Opens Modal -->
+<a href="#openModal">Movie Trailer</a>
+	<div id="openModal" class="modalDialog">
+<!-- File paths!!!! AGHHHHHHH -->
+	<div>
+<!-- Closes Modal -->
+		<a href="#close" title="Close">x</a>
+			<p>The Craft is a 1996 American supernatural horror film directed by Andrew Fleming and starring Robin Tunney, Fairuza Balk, Neve Campbell, and Rachel True.</p>
+			<iframe width="890" height="415" src="https://www.youtube.com/embed/DoM4OXQVCcE" frameborder="0" allowfullscreen></iframe>
+				
+	</div>
+</div>
+</head>
+<body>
+<!-- this is the flex container for your menu/ navigation. This is eventually going to function as my nav bar but I need to do some research. It has a corresponding section in your css style sheet. I need to remember that everything needs to be present in css and html. This was a huge headache in my first project -->
+  <div class="nav-container">
+  	<div class="navigation">
+<!-- remember to keep your naming conventions straight. The above needs to be named 'navigation' because it is the container/home for the elements that follow... -->
+<!-- 		<div class="home">Home</div>
+
+ --> 
+
+ <div class="left">
+      <a href="index.html" class="link">Home</a></div>
+<div class="left">
+      <a href="synopsis.html" class="link">Synopsis</a></div>
+<div class="left">
+      <a href="cast.html" class="link">Cast</a></div>
+<div class="left">
+      <a href="media.html" class="link">Media</a></div>
+</div>
+</div>
+
+
+
+<!-- for the sake of sanity and clarity: this is the end of your 'menu' div. Now we get to add corresponging styling via CSS cause I'm breaking the habit of inline styling. It doesn't play well with flexbox and aint nobody got time for that. -->
+<!-- ////////////////////////////////////////// -->
+<!-- remember that each of these gets a section in css as well. flexbox makes  hell of a lot more since than inline styling. -->
+<div class="header-container">
+	<div class="header">
+		<br>
+		<div class="logo"><img src="images/logo.png"/>
+		</div>
+	</div>
+</div>
+<!-- ////////////////////////////////////////////// -->
+<div class="gif-container">
+	<div class="gif">
+		<br>
+		<div class="weirdos"><div style="width:100%;height:0;padding-bottom:47%;position:relative;"><iframe src="https://giphy.com/embed/ywqqSYfZJsj2E" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+<!-- god bless gihpy for having responsive themes. They just saved me a lot of trouble -->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'/>
+	<link rel="stylesheet"  href="style.css" type="text/css">
+<!-- insert your Googlefont here: -->
+	<link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+	<title>The Craft</title>
+	<title></title>
+</head>
+<body>
+<div class="nav-container">
+  	<div class="navigation">
+<!-- remember to keep your naming conventions straight. The above needs to be named 'navigation' because it is the container/home for the elements that follow... -->
+<!-- 		<div class="home">Home</div>
+
+ --> 
+
+ <div class="left">
+      <a href="index.html" class="link">Home</a></div>
+<div class="left">
+      <a href="synopsis.html" class="link">Synopsis</a></div>
+<div class="left">
+      <a href="cast.html" class="link">Cast</a></div>
+<div class="left">
+      <a href="media.html" class="link">Media</a></div>
+</div>
+</div>
+<div class="header-container">
+	<div class="header">
+		<br>
+		<div class="logo"><img src="images/logo.png"/>
+
+		</div>
+	</div>
+</div>
+<br>
+<center>
+<h1>Cast</h1>
+<br>
+<p> Main cast members include: Neve Campbell, Rachel True, Fairuza Balk and Robin Tunney</p>
+<img class="witchSlides" src="images/neve.jpg" 
+style= "width:50%">
+<img class="witchSlides" src="images/rachel.jpg" style= "width:50%">
+<img class="witchSlides" src="images/fairuza.jpg"
+style= "width:50%">
+<img class="witchSlides" src="images/robin.jpg"
+style= "width:50%">
+<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+<p>
+	85 different actresses screen-tested for the four main roles, including Angelina Jolie and Alicia Silverstone, who had just completed Clueless. Rachel True and real-life Wiccan Fairuza Balk were the first to be cast in their respective roles. The character of Rochelle was re-written when True was cast to be African-American, incorporating a racism subplot as the character's major conflict. 
+<br>
+	Robin Tunney was initially cast in the role of Bonnie, but the producers decided she would be better in the starring role of Sarah, which she was persuaded to accept despite preferring the former. Neve Campbell, the most well-known of the four actresses for her role on Party of Five, was then cast as Bonnie. Tunney had shaved her head for her role in Empire Records and had to wear a wig throughout filming.
+<br>
+	Production enlisted a real-life Wiccan named Pat Devin to act as on-set adviser for the film. She wrote the incantations used and ensured that the treatment of the Wiccan subject-matter was as accurate and respectful as possible.
+</p>
+</body>
+<script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("witchSlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+</script>
+</html>

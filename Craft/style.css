@@ -1,0 +1,92 @@
+/*the following code snippet controls 
+the background color of the site, the 
+google font used, and text size. I might pair 
+'Spectral'with 'Roboto' as I wrap up.*/
+body,p {
+	background-color:#201B1B;
+	font-family: 'Spectral SC', serif;
+	font-size: 24px;
+}
+/*controls the margins and padding of my menu 
+<div>
+*/
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/*I'm adjusting the margins of the page and setting
+up my menu container*/
+
+.nav-container {
+	color:#D3AF8E;
+	background-color:#380606;
+
+/*this is where I change the background color for
+the menu bar*/
+	padding:20px 0;
+	display:flex;
+	justify-content:center;
+}
+/*this is where the magic happens. this is telling
+my entire document to flex. It's bendy!*/
+.navigation {
+	width:850px;
+	display:flex;
+	justify-content:space-around;
+}
+/*time to make the header flex as well! by the way, 
+this is where your header styling lives*/
+.header-container {
+/*please be mindful of names. I just wasted 20mins 
+trying to get the damn logo to flex*/
+	display:flex;
+	justify-content: center;
+}
+/*this container has been set up to flex, and the logo
+should be centered now: update, it isn't, but that is
+because I need to add addtional styling to the child.*/
+.header {
+	display:flex;
+	width: 850px;
+	height:300px;
+	justify-content: space-around;	
+}
+/*This is where the styling for your modal lives*/
+.modalDialog {
+  position:fixed;
+  font-family:'Spectral SC', serif;
+  top:10px;
+  right:0;
+  bottom:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+  z-index: 99999;
+  opacity:0;
+  /*animation is in the modal*/
+  -webkit-transition:opacity 400ms ease-in;
+  -moz-transition:opacity 400ms ease-in;
+  transition:opacity 400ms ease-in;
+  pointer-events:none;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events:auto;
+}
+.modalDialog > div {
+  width:900px;
+  position:relative;
+  margin: 10% auto;
+  padding: 5px 20px 31px 20px;
+  border-radius: 10px;
+  background: #201B1B;
+  background:-moz-linear-gradient(#fff,#999);
+  background:-webkit-linear-gradient(#fff,#999);
+  background:-o-linear-gradient((#fff,#999);
+ }
+header:hover {
+	background-color:red;
+}
+
+
